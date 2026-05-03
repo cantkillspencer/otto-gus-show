@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Episodes — The Otto & Gus Show</title>
+  <meta name="description" content="Every episode of The Otto & Gus Show. Tech, gaming, robotics, and more." />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- ==== NAVIGATION (kept identical across pages, only active link changes) ==== -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html"><span class="nav__logo">OG</span><span>The Otto &amp; Gus Show</span></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link nav__link--active" href="episodes.html">Episodes</a></li>
+          <li><a class="nav__link" href="watch.html">Watch</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu" data-nav-toggle>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav__mobile" data-nav-mobile>
+      <a href="index.html">Home</a>
+      <a class="nav__link--active" href="episodes.html">Episodes</a>
+      <a href="watch.html">Watch</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- ==== PAGE INTRO ==== -->
+  <section class="hero" style="padding: 5rem 0 2rem;">
+    <div class="hero__inner">
+      <span class="eyebrow">// All episodes</span>
+      <h1 class="hero__title">The full <span class="hero__title-accent">archive.</span></h1>
+      <p class="hero__sub">Every episode we've ever recorded. Filter by topic, search by title, or scroll until something jumps out.</p>
+    </div>
+  </section>
+
+  <!-- ==== FILTER BAR ==== -->
+  <section style="padding: 0 0 2rem;">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        <button class="btn btn--sm" style="background: var(--color-surface-elevated); color: var(--color-text); border: 1px solid var(--color-primary);" data-filter="all">All</button>
+        <button class="btn btn--sm" style="background: var(--color-surface); color: var(--color-text-muted); border: 1px solid var(--color-border-strong);" data-filter="tech">Tech</button>
+        <button class="btn btn--sm" style="background: var(--color-surface); color: var(--color-text-muted); border: 1px solid var(--color-border-strong);" data-filter="gaming">Gaming</button>
+        <button class="btn btn--sm" style="background: var(--color-surface); color: var(--color-text-muted); border: 1px solid var(--color-border-strong);" data-filter="robotics">Robotics</button>
+        <button class="btn btn--sm" style="background: var(--color-surface); color: var(--color-text-muted); border: 1px solid var(--color-border-strong);" data-filter="qa">Q&amp;A</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EPISODES GRID
+       Each <article class="episode-card"> is one episode.
+       To add a new episode, copy any <article> below and:
+         1. Update the image src
+         2. Update the title and description
+         3. Update episode number, date, duration
+         4. Add or remove the "NEW" badge (only the newest gets it)
+       Use data-tag="..." to wire it up to the filter bar above.
+       ============================================================ -->
+  <section style="padding-top: 1rem;">
+    <div class="container">
+      <div class="episode-grid">
+
+        <!-- ===== EPISODE 042 — NEWEST ===== -->
+        <article class="episode-card" data-tag="tech">
+          <a class="episode-card__media" href="watch.html">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/76B900?text=Episode+42" alt="Episode 42 thumbnail" loading="lazy" />
+            <div class="episode-card__badges">
+              <span class="badge badge--new">NEW</span>
+            </div>
+            <div class="episode-card__duration">42:18</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta">
+              <span>EP 42</span><span class="episode-card__meta-dot"></span><span>Apr 28, 2026</span>
+            </div>
+            <h3 class="episode-card__title">Building Our First Gaming PC</h3>
+            <p class="episode-card__desc">We finally cracked open the parts list and built a rig from scratch. GPU drama, RGB everything, and one extremely close call with a CPU pin. Plus the budget breakdown nobody asked for.</p>
+            <div class="episode-card__footer">
+              <span class="episode-card__num">// 042</span>
+              <a class="btn btn--ghost btn--sm" href="watch.html">Watch →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== EPISODE 041 ===== -->
+        <article class="episode-card" data-tag="robotics">
+          <a class="episode-card__media" href="watch.html">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/00A8E1?text=Episode+41" alt="Episode 41 thumbnail" loading="lazy" />
+            <div class="episode-card__badges">
+              <span class="badge badge--green">Robotics</span>
+            </div>
+            <div class="episode-card__duration">35:04</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta">
+              <span>EP 41</span><span class="episode-card__meta-dot"></span><span>Apr 21, 2026</span>
+            </div>
+            <h3 class="episode-card__title">Why Robotics Club Changed Everything</h3>
+            <p class="episode-card__desc">Otto walks Gus through what robotics club actually looks like — the late-night debug sessions, the regional competition meltdown, and why CAD is secretly fun.</p>
+            <div class="episode-card__footer">
+              <span class="episode-card__num">// 041</span>
+              <a class="btn btn--ghost btn--sm" href="watch.html">Watch →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== EPISODE 040 ===== -->
+        <article class="episode-card" data-tag="gaming">
+          <a class="episode-card__media" href="watch.html">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/E60012?text=Episode+40" alt="Episode 40 thumbnail" loading="lazy" />
+            <div class="episode-card__badges">
+              <span class="badge badge--cyan">Gaming</span>
+            </div>
+            <div class="episode-card__duration">28:47</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta">
+              <span>EP 40</span><span class="episode-card__meta-dot"></span><span>Apr 14, 2026</span>
+            </div>
+            <h3 class="episode-card__title">Top 5 Games We're Playing Right Now</h3>
+            <p class="episode-card__desc">Gus runs the rankings. Otto disagrees with literally every choice. We settle exactly zero arguments. Spoiler: one of them is Minecraft. Again.</p>
+            <div class="episode-card__footer">
+              <span class="episode-card__num">// 040</span>
+              <a class="btn btn--ghost btn--sm" href="watch.html">Watch →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== EPISODE 039 ===== -->
+        <article class="episode-card" data-tag="gaming">
+          <a class="episode-card__media" href="watch.html">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/76B900?text=Episode+39" alt="Episode 39 thumbnail" loading="lazy" />
+            <div class="episode-card__badges">
+              <span class="badge badge--cyan">Gaming</span>
+            </div>
+            <div class="episode-card__duration">31:55</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta">
+              <span>EP 39</span><span class="episode-card__meta-dot"></span><span>Apr 07, 2026</span>
+            </div>
+            <h3 class="episode-card__title">Dad Tries to Understand Minecraft</h3>
+            <p class="episode-card__desc">We hand dad the controller. He builds a "house" out of dirt blocks. A creeper happens. Pure cinema. Also: the moment he discovers redstone exists.</p>
+            <div class="episode-card__footer">
+              <span class="episode-card__num">// 039</span>
+              <a class="btn btn--ghost btn--sm" href="watch.html">Watch →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== EPISODE 038 ===== -->
+        <article class="episode-card" data-tag="tech">
+          <a class="episode-card__media" href="watch.html">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/00A8E1?text=Episode+38" alt="Episode 38 thumbnail" loading="lazy" />
+            <div class="episode-card__badges">
+              <span class="badge badge--green">Tech</span>
+            </div>
+            <div class="episode-card__duration">22:11</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta">
+              <span>EP 38</span><span class="episode-card__meta-dot"></span><span>Mar 31, 2026</span>
+            </div>
+            <h3 class="episode-card__title">Our YouTube Setup Tour</h3>
+            <p class="episode-card__desc">A full walkthrough of the basement studio — cameras, mics, lighting, and the weird thing dad calls a "tripod" but is actually a mop holder.</p>
+            <div class="episode-card__footer">
+              <span class="episode-card__num">// 038</span>
+              <a class="btn btn--ghost btn--sm" href="watch.html">Watch →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- ===== EPISODE 037 ===== -->
+        <article class="episode-card" data-tag="qa">
+          <a class="episode-card__media" href="watch.html">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/E60012?text=Episode+37" alt="Episode 37 thumbnail" loading="lazy" />
+            <div class="episode-card__badges">
+              <span class="badge badge--neutral">Q&amp;A</span>
+            </div>
+            <div class="episode-card__duration">44:32</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta">
+              <span>EP 37</span><span class="episode-card__meta-dot"></span><span>Mar 24, 2026</span>
+            </div>
+            <h3 class="episode-card__title">Q&amp;A: Your Questions Answered</h3>
+            <p class="episode-card__desc">You sent in 200+ questions, we picked our favorite 14. Topics include: AI, careers, school, dogs, the worst game we've ever played, and Gus's secret YouTube algorithm theory.</p>
+            <div class="episode-card__footer">
+              <span class="episode-card__num">// 037</span>
+              <a class="btn btn--ghost btn--sm" href="watch.html">Watch →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Load more (placeholder) -->
+      <div class="center-text mt-lg">
+        <a class="btn btn--secondary" href="#">Load earlier episodes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== FOOTER ==== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>The Otto &amp; Gus Show</h3>
+          <p>Tech, gaming, and everything in between. Hosted by two brothers who refuse to take themselves seriously.</p>
+          <div class="socials" style="margin-top: 1.25rem;">
+            <a class="social" href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+            <a class="social" href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+            <a class="social" href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.8 4.8 0 0 1-2.5-3H11v12.6a2.7 2.7 0 1 1-2.7-2.7 2.6 2.6 0 0 1 .8.1V9.7a5.7 5.7 0 1 0 5 5.7V9.4a7.6 7.6 0 0 0 4.5 1.4V7.5a4.8 4.8 0 0 1-2-1.7z"/></svg></a>
+            <a class="social" href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.2.4a17.5 17.5 0 0 1 4.5 1.6 16 16 0 0 0-13.4 0 17.7 17.7 0 0 1 4.5-1.6L10.6 3a19.7 19.7 0 0 0-4.9 1.4A20.7 20.7 0 0 0 2.4 17a19.9 19.9 0 0 0 6 3l1.2-1.6a13 13 0 0 1-2-1l.5-.4a14 14 0 0 0 12 0l.5.4a13 13 0 0 1-2 1L19.6 20a19.9 19.9 0 0 0 6-3 20.6 20.6 0 0 0-3.3-12.6zM9.5 14.4a2 2 0 0 1-1.9-2.2 2 2 0 0 1 1.9-2.2 2 2 0 0 1 1.9 2.2 2 2 0 0 1-1.9 2.2zm5 0a2 2 0 0 1-1.9-2.2 2 2 0 0 1 1.9-2.2 2 2 0 0 1 1.9 2.2 2 2 0 0 1-1.9 2.2z"/></svg></a>
+            <a class="social" href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.566 7.5L22 22h-6.844l-4.797-6.27L4.8 22H2l7.05-8.05L2 2h6.95l4.34 5.74L18.244 2zm-2.4 18h1.6L7.24 4H5.5l10.344 16z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5>Show</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="watch.html">Watch &amp; Listen</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Get in touch</h5>
+          <ul>
+            <li><a href="contact.html">Contact form</a></li>
+            <li><a href="mailto:hello@ottogusshow.com">hello@ottogusshow.com</a></li>
+            <li><a href="contact.html">Be a guest</a></li>
+            <li><a href="contact.html">Fan mail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 The Otto &amp; Gus Show. All rights reserved.</span>
+        <span>Made with ❤️ + ☕ in the basement</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* ============================================================
+   colors.css — The Otto & Gus Show
+   ------------------------------------------------------------
+   This is the ONLY file you need to change to recolor the site.
+   Every color used anywhere on the site is defined here as a
+   CSS variable. Change a value here and it updates everywhere.
+
+   How to swap a color:
+   1. Find the variable below (e.g. --color-nvidia-green)
+   2. Change the hex code (e.g. #76B900 -> #FF00FF)
+   3. Save and refresh the page in your browser
+
+   Test color combinations at:  https://coolors.co
+   Pick hex codes from images:  https://imagecolorpicker.com
+   ============================================================ */
+
+:root {
+  /* --------------------------------------------------------
+     BRAND ACCENTS — the three-color "fusion" palette
+     -------------------------------------------------------- */
+
+  /* NVIDIA green — primary brand & power elements */
+  --color-nvidia-green: #76B900;
+  --color-nvidia-green-dark: #5A8D00;
+  --color-nvidia-green-glow: rgba(118, 185, 0, 0.45);
+
+  /* PlayStation cyan — interactive elements, hover states */
+  --color-ps-cyan: #00A8E1;
+  --color-ps-cyan-dark: #0088B7;
+  --color-ps-cyan-glow: rgba(0, 168, 225, 0.45);
+
+  /* Nintendo red — LIVE badges, NEW alerts, urgent CTAs */
+  --color-nintendo-red: #E60012;
+  --color-nintendo-red-dark: #B8000E;
+  --color-nintendo-red-glow: rgba(230, 0, 18, 0.55);
+
+  /* --------------------------------------------------------
+     SURFACE — backgrounds & cards
+     -------------------------------------------------------- */
+  --color-bg: #0A0A0A;              /* page background */
+  --color-surface: #1A1A1A;         /* card surface */
+  --color-surface-elevated: #232323; /* hover/elevated card */
+  --color-surface-overlay: rgba(10, 10, 10, 0.7); /* glass effect */
+
+  /* --------------------------------------------------------
+     TEXT
+     -------------------------------------------------------- */
+  --color-text: #FFFFFF;            /* primary text */
+  --color-text-muted: #A0A0A0;      /* secondary / metadata */
+  --color-text-faint: #6B6B6B;      /* footer fine print */
+
+  /* --------------------------------------------------------
+     LINES & DIVIDERS
+     -------------------------------------------------------- */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.18);
+
+  /* --------------------------------------------------------
+     ROLE COLORS — semantic shortcuts the rest of the site uses
+     Change these to remap which "role" gets which brand color.
+     -------------------------------------------------------- */
+  --color-primary: var(--color-nvidia-green);       /* main CTAs, brand */
+  --color-interactive: var(--color-ps-cyan);        /* links, hovers */
+  --color-alert: var(--color-nintendo-red);         /* NEW / LIVE / urgent */
+  --color-glow-primary: var(--color-nvidia-green-glow);
+  --color-glow-interactive: var(--color-ps-cyan-glow);
+  --color-glow-alert: var(--color-nintendo-red-glow);
+}

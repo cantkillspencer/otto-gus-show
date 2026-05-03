@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Watch & Listen — The Otto & Gus Show</title>
+  <meta name="description" content="Stream the latest episode and find us on every major podcast platform." />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- ==== NAVIGATION ==== -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html"><span class="nav__logo">OG</span><span>The Otto &amp; Gus Show</span></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="episodes.html">Episodes</a></li>
+          <li><a class="nav__link nav__link--active" href="watch.html">Watch</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu" data-nav-toggle>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav__mobile" data-nav-mobile>
+      <a href="index.html">Home</a>
+      <a href="episodes.html">Episodes</a>
+      <a class="nav__link--active" href="watch.html">Watch</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- ==== INTRO ==== -->
+  <section class="hero" style="padding: 5rem 0 2rem;">
+    <div class="hero__inner">
+      <span class="badge badge--live">LIVE NOW: Episode 42</span>
+      <h1 class="hero__title">Watch the <span class="hero__title-accent">latest episode.</span></h1>
+      <p class="hero__sub">Stream right here, or subscribe wherever you get your podcasts.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VIDEO PLAYER
+       To swap the video, change the YouTube ID in the iframe src.
+       Example: replace "dQw4w9WgXcQ" with your video ID.
+       ============================================================ -->
+  <section style="padding-top: 1rem;">
+    <div class="container" style="max-width: 1100px;">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+          title="The Otto & Gus Show — Episode 42: Building Our First Gaming PC"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- Episode caption under player -->
+      <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: flex-start; justify-content: space-between; margin-top: 2rem;">
+        <div style="flex: 1 1 320px;">
+          <div class="episode-card__meta" style="margin-bottom: 0.5rem;">
+            <span>EP 42</span><span class="episode-card__meta-dot"></span><span>Apr 28, 2026</span><span class="episode-card__meta-dot"></span><span>42:18</span>
+          </div>
+          <h2 style="font-size: 1.75rem; margin-bottom: 0.5rem;">Building Our First Gaming PC</h2>
+          <p style="color: var(--color-text-muted); max-width: 640px;">
+            We finally cracked open the parts list and built a rig from scratch.
+            GPU drama, RGB everything, and one extremely close call with a CPU pin.
+            Plus the budget breakdown nobody asked for.
+          </p>
+        </div>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a class="btn btn--primary" href="#">Subscribe</a>
+          <a class="btn btn--secondary" href="episodes.html">All episodes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LISTEN ON — podcast platform grid
+       ============================================================ -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__lead">
+          <span class="eyebrow">// Listen anywhere</span>
+          <h2>Take us with you</h2>
+          <p>Pick your platform — we drop the audio version everywhere. Subscribe and you'll never miss a Tuesday.</p>
+        </div>
+      </div>
+
+      <div class="platform-grid">
+        <a class="platform" href="#">
+          <span class="platform__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm5.5 17.3a.7.7 0 0 1-1 .2c-2.7-1.6-6-2-10.1-1a.7.7 0 1 1-.3-1.5c4.4-1 8.1-.6 11.1 1.2.4.2.5.7.3 1.1zm1.5-3.3a.9.9 0 0 1-1.2.3c-3-1.9-7.7-2.4-11.3-1.3a.9.9 0 1 1-.5-1.7c4.1-1.2 9.3-.7 12.7 1.4.4.3.6.9.3 1.3zm.1-3.4c-3.6-2.1-9.6-2.3-13.1-1.3a1.1 1.1 0 1 1-.6-2.1c4-1.2 10.6-1 14.7 1.5a1.1 1.1 0 1 1-1 2z"/></svg>
+          </span>
+          <span class="platform__label">
+            <small>Listen on</small>
+            <strong>Spotify</strong>
+          </span>
+        </a>
+        <a class="platform" href="#">
+          <span class="platform__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 4.5a3 3 0 1 1-3 3 3 3 0 0 1 3-3zm0 13a7.2 7.2 0 0 1-5.5-2.5 4.4 4.4 0 0 1 11 0A7.2 7.2 0 0 1 12 19.5z"/></svg>
+          </span>
+          <span class="platform__label">
+            <small>Listen on</small>
+            <strong>Apple Podcasts</strong>
+          </span>
+        </a>
+        <a class="platform" href="#">
+          <span class="platform__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+          </span>
+          <span class="platform__label">
+            <small>Watch on</small>
+            <strong>YouTube</strong>
+          </span>
+        </a>
+        <a class="platform" href="#">
+          <span class="platform__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="#0A0A0A"/></svg>
+          </span>
+          <span class="platform__label">
+            <small>Listen on</small>
+            <strong>Pocket Casts</strong>
+          </span>
+        </a>
+        <a class="platform" href="#">
+          <span class="platform__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1 5h2v6l5 3-1 1.7-6-3.6V7z"/></svg>
+          </span>
+          <span class="platform__label">
+            <small>Listen on</small>
+            <strong>Overcast</strong>
+          </span>
+        </a>
+        <a class="platform" href="#">
+          <span class="platform__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v12H3z" opacity=".15"/><path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+          </span>
+          <span class="platform__label">
+            <small>Listen on</small>
+            <strong>RSS Feed</strong>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== UP NEXT ==== -->
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-head__lead">
+          <span class="eyebrow">// Up next</span>
+          <h2>Recently dropped</h2>
+        </div>
+        <a class="btn btn--ghost" href="episodes.html">All episodes →</a>
+      </div>
+      <div class="episode-grid">
+        <article class="episode-card">
+          <a class="episode-card__media" href="watch.html">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/00A8E1?text=Episode+41" alt="Episode 41 thumbnail" loading="lazy" />
+            <div class="episode-card__duration">35:04</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta"><span>EP 41</span><span class="episode-card__meta-dot"></span><span>Apr 21, 2026</span></div>
+            <h3 class="episode-card__title">Why Robotics Club Changed Everything</h3>
+            <p class="episode-card__desc">Otto walks Gus through what robotics club actually looks like — and why CAD is secretly fun.</p>
+          </div>
+        </article>
+        <article class="episode-card">
+          <a class="episode-card__media" href="watch.html">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/E60012?text=Episode+40" alt="Episode 40 thumbnail" loading="lazy" />
+            <div class="episode-card__duration">28:47</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta"><span>EP 40</span><span class="episode-card__meta-dot"></span><span>Apr 14, 2026</span></div>
+            <h3 class="episode-card__title">Top 5 Games We're Playing Right Now</h3>
+            <p class="episode-card__desc">Gus runs the rankings. Otto disagrees with literally every choice.</p>
+          </div>
+        </article>
+        <article class="episode-card">
+          <a class="episode-card__media" href="watch.html">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/76B900?text=Episode+39" alt="Episode 39 thumbnail" loading="lazy" />
+            <div class="episode-card__duration">31:55</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta"><span>EP 39</span><span class="episode-card__meta-dot"></span><span>Apr 07, 2026</span></div>
+            <h3 class="episode-card__title">Dad Tries to Understand Minecraft</h3>
+            <p class="episode-card__desc">A creeper happens. Pure cinema. Also the moment dad discovers redstone.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== FOOTER ==== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>The Otto &amp; Gus Show</h3>
+          <p>Tech, gaming, and everything in between. Hosted by two brothers who refuse to take themselves seriously.</p>
+          <div class="socials" style="margin-top: 1.25rem;">
+            <a class="social" href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+            <a class="social" href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+            <a class="social" href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.8 4.8 0 0 1-2.5-3H11v12.6a2.7 2.7 0 1 1-2.7-2.7 2.6 2.6 0 0 1 .8.1V9.7a5.7 5.7 0 1 0 5 5.7V9.4a7.6 7.6 0 0 0 4.5 1.4V7.5a4.8 4.8 0 0 1-2-1.7z"/></svg></a>
+            <a class="social" href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.2.4a17.5 17.5 0 0 1 4.5 1.6 16 16 0 0 0-13.4 0 17.7 17.7 0 0 1 4.5-1.6L10.6 3a19.7 19.7 0 0 0-4.9 1.4A20.7 20.7 0 0 0 2.4 17a19.9 19.9 0 0 0 6 3l1.2-1.6a13 13 0 0 1-2-1l.5-.4a14 14 0 0 0 12 0l.5.4a13 13 0 0 1-2 1L19.6 20a19.9 19.9 0 0 0 6-3 20.6 20.6 0 0 0-3.3-12.6zM9.5 14.4a2 2 0 0 1-1.9-2.2 2 2 0 0 1 1.9-2.2 2 2 0 0 1 1.9 2.2 2 2 0 0 1-1.9 2.2zm5 0a2 2 0 0 1-1.9-2.2 2 2 0 0 1 1.9-2.2 2 2 0 0 1 1.9 2.2 2 2 0 0 1-1.9 2.2z"/></svg></a>
+            <a class="social" href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.566 7.5L22 22h-6.844l-4.797-6.27L4.8 22H2l7.05-8.05L2 2h6.95l4.34 5.74L18.244 2zm-2.4 18h1.6L7.24 4H5.5l10.344 16z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col"><h5>Show</h5><ul><li><a href="index.html">Home</a></li><li><a href="episodes.html">Episodes</a></li><li><a href="watch.html">Watch &amp; Listen</a></li><li><a href="about.html">About</a></li></ul></div>
+        <div class="footer__col"><h5>Get in touch</h5><ul><li><a href="contact.html">Contact form</a></li><li><a href="mailto:hello@ottogusshow.com">hello@ottogusshow.com</a></li><li><a href="contact.html">Be a guest</a></li><li><a href="contact.html">Fan mail</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 The Otto &amp; Gus Show. All rights reserved.</span><span>Made with ❤️ + ☕ in the basement</span></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style Guide — The Otto & Gus Show</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html"><span class="nav__logo">OG</span><span>The Otto &amp; Gus Show</span></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="episodes.html">Episodes</a></li>
+          <li><a class="nav__link" href="watch.html">Watch</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="padding: 5rem 0 2rem;">
+    <div class="hero__inner">
+      <span class="eyebrow">// Internal // Style guide</span>
+      <h1 class="hero__title">The <span class="hero__title-accent">design system.</span></h1>
+      <p class="hero__sub">Every color, button, badge, and card the site uses, in one place. Use this page as a cheat sheet when you're editing.</p>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- =================== COLORS =================== -->
+    <section class="guide-section">
+      <span class="eyebrow">// Section 01</span>
+      <h2 style="margin-top: 0.5rem;">Colors</h2>
+      <p class="text-muted" style="margin-bottom: 1.5rem;">
+        All colors live as CSS variables in <code class="text-mono">css/colors.css</code>. Change a value there, the whole site updates.
+      </p>
+
+      <h3 style="margin-bottom: 1rem;">Brand fusion</h3>
+      <div class="swatch-grid">
+        <div class="swatch">
+          <div class="swatch__chip" style="background: var(--color-nvidia-green);"></div>
+          <div class="swatch__body">
+            <div class="swatch__name">NVIDIA Green</div>
+            <span class="swatch__hex">#76B900</span>
+            <code class="swatch__var">--color-nvidia-green</code>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch__chip" style="background: var(--color-ps-cyan);"></div>
+          <div class="swatch__body">
+            <div class="swatch__name">PlayStation Cyan</div>
+            <span class="swatch__hex">#00A8E1</span>
+            <code class="swatch__var">--color-ps-cyan</code>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch__chip" style="background: var(--color-nintendo-red);"></div>
+          <div class="swatch__body">
+            <div class="swatch__name">Nintendo Red</div>
+            <span class="swatch__hex">#E60012</span>
+            <code class="swatch__var">--color-nintendo-red</code>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin: 2rem 0 1rem;">Surfaces &amp; text</h3>
+      <div class="swatch-grid">
+        <div class="swatch">
+          <div class="swatch__chip" style="background: var(--color-bg);"></div>
+          <div class="swatch__body"><div class="swatch__name">Page bg</div><span class="swatch__hex">#0A0A0A</span><code class="swatch__var">--color-bg</code></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch__chip" style="background: var(--color-surface);"></div>
+          <div class="swatch__body"><div class="swatch__name">Card surface</div><span class="swatch__hex">#1A1A1A</span><code class="swatch__var">--color-surface</code></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch__chip" style="background: var(--color-text);"></div>
+          <div class="swatch__body"><div class="swatch__name">Primary text</div><span class="swatch__hex">#FFFFFF</span><code class="swatch__var">--color-text</code></div>
+        </div>
+        <div class="swatch">
+          <div class="swatch__chip" style="background: var(--color-text-muted);"></div>
+          <div class="swatch__body"><div class="swatch__name">Muted text</div><span class="swatch__hex">#A0A0A0</span><code class="swatch__var">--color-text-muted</code></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== TYPOGRAPHY =================== -->
+    <section class="guide-section">
+      <span class="eyebrow">// Section 02</span>
+      <h2 style="margin-top: 0.5rem;">Typography</h2>
+      <p class="text-muted" style="margin-bottom: 1.5rem;">
+        Inter for everything. JetBrains Mono for tags, badges, and metadata.
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+        <div><span class="eyebrow">// eyebrow</span></div>
+        <h1 style="margin: 0;">H1 Display Headline</h1>
+        <h2 style="margin: 0;">H2 Section Heading</h2>
+        <h3 style="margin: 0;">H3 Card Title</h3>
+        <p style="margin: 0;">Body paragraph — the default size for descriptions, intros, and most prose. Reads like a slightly serious newsletter.</p>
+        <p class="text-muted" style="margin: 0;">Muted body — used for captions, metadata, and secondary copy.</p>
+        <p class="text-mono" style="margin: 0;">JetBrains Mono — for tags, episode numbers, timestamps.</p>
+      </div>
+    </section>
+
+    <!-- =================== BUTTONS =================== -->
+    <section class="guide-section">
+      <span class="eyebrow">// Section 03</span>
+      <h2 style="margin-top: 0.5rem;">Buttons</h2>
+      <p class="text-muted" style="margin-bottom: 1.5rem;">Three flavors. Pick by intent: primary for the main action, secondary for the alt action, alert for "don't miss this."</p>
+      <div class="demo-row">
+        <button class="btn btn--primary">Primary CTA</button>
+        <button class="btn btn--secondary">Secondary</button>
+        <button class="btn btn--alert">Alert / Live</button>
+        <a class="btn btn--ghost" href="#">Ghost link →</a>
+        <button class="btn btn--primary btn--sm">Small primary</button>
+      </div>
+      <pre class="code-block"><span class="k">&lt;button</span> <span class="s">class="btn btn--primary"</span><span class="k">&gt;</span>Primary CTA<span class="k">&lt;/button&gt;</span>
+<span class="k">&lt;button</span> <span class="s">class="btn btn--secondary"</span><span class="k">&gt;</span>Secondary<span class="k">&lt;/button&gt;</span>
+<span class="k">&lt;button</span> <span class="s">class="btn btn--alert"</span><span class="k">&gt;</span>Alert<span class="k">&lt;/button&gt;</span></pre>
+    </section>
+
+    <!-- =================== BADGES =================== -->
+    <section class="guide-section">
+      <span class="eyebrow">// Section 04</span>
+      <h2 style="margin-top: 0.5rem;">Badges</h2>
+      <p class="text-muted" style="margin-bottom: 1.5rem;">Use NEW only on the most recent episode. LIVE for actual live streams.</p>
+      <div class="demo-row">
+        <span class="badge badge--new">NEW</span>
+        <span class="badge badge--live">LIVE</span>
+        <span class="badge badge--green">Tech</span>
+        <span class="badge badge--cyan">Gaming</span>
+        <span class="badge badge--neutral">Q&amp;A</span>
+      </div>
+      <pre class="code-block"><span class="k">&lt;span</span> <span class="s">class="badge badge--new"</span><span class="k">&gt;</span>NEW<span class="k">&lt;/span&gt;</span>
+<span class="k">&lt;span</span> <span class="s">class="badge badge--live"</span><span class="k">&gt;</span>LIVE<span class="k">&lt;/span&gt;</span></pre>
+    </section>
+
+    <!-- =================== EPISODE CARD =================== -->
+    <section class="guide-section">
+      <span class="eyebrow">// Section 05</span>
+      <h2 style="margin-top: 0.5rem;">Episode card</h2>
+      <p class="text-muted" style="margin-bottom: 1.5rem;">
+        The reusable component. Hover to see the green glow + zoom effect. See <code class="text-mono">CUSTOMIZATION-GUIDE.md</code> for the copy/paste template.
+      </p>
+      <div class="episode-grid" style="max-width: 720px;">
+        <article class="episode-card">
+          <a class="episode-card__media" href="#">
+            <img src="https://via.placeholder.com/400x225/0A0A0A/76B900?text=Demo+Card" alt="Demo episode" loading="lazy" />
+            <div class="episode-card__badges"><span class="badge badge--new">NEW</span></div>
+            <div class="episode-card__duration">42:18</div>
+          </a>
+          <div class="episode-card__body">
+            <div class="episode-card__meta"><span>EP 99</span><span class="episode-card__meta-dot"></span><span>Demo · 2026</span></div>
+            <h3 class="episode-card__title">Demo episode title</h3>
+            <p class="episode-card__desc">Hover the card to see the lift, glow, image zoom, and play-button reveal animation in action.</p>
+            <div class="episode-card__footer">
+              <span class="episode-card__num">// 099</span>
+              <a class="btn btn--ghost btn--sm" href="#">Watch →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =================== HOW TO CUSTOMIZE =================== -->
+    <section class="guide-section">
+      <span class="eyebrow">// Section 06</span>
+      <h2 style="margin-top: 0.5rem;">How to customize</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>🎨 Change a color</h3>
+          <p>Open <code class="text-mono">css/colors.css</code>. Find the variable. Change the hex value. Save. Done.</p>
+        </div>
+        <div class="feature">
+          <h3>➕ Add an episode</h3>
+          <p>Open <code class="text-mono">episodes.html</code>. Copy any <code class="text-mono">&lt;article class="episode-card"&gt;</code> block. Paste it into the grid. Update the image, title, description, and date.</p>
+        </div>
+        <div class="feature">
+          <h3>🎥 Swap the YouTube video</h3>
+          <p>Open <code class="text-mono">watch.html</code>. Find the <code class="text-mono">&lt;iframe&gt;</code>. Replace the video ID in the URL with yours.</p>
+        </div>
+        <div class="feature">
+          <h3>📱 Update social handles</h3>
+          <p>Search-and-replace <code class="text-mono">@ottogusshow</code> across all HTML files. Update the <code class="text-mono">href</code> on each social link.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© 2026 The Otto &amp; Gus Show — internal style guide</span>
+        <span>Made with ❤️ + ☕ in the basement</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

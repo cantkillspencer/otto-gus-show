@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — The Otto & Gus Show</title>
+  <meta name="description" content="Pitch a guest, send fan mail, or just say hi." />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- ==== NAVIGATION ==== -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html"><span class="nav__logo">OG</span><span>The Otto &amp; Gus Show</span></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="episodes.html">Episodes</a></li>
+          <li><a class="nav__link" href="watch.html">Watch</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link nav__link--active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu" data-nav-toggle>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav__mobile" data-nav-mobile>
+      <a href="index.html">Home</a>
+      <a href="episodes.html">Episodes</a>
+      <a href="watch.html">Watch</a>
+      <a href="about.html">About</a>
+      <a class="nav__link--active" href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- ==== INTRO ==== -->
+  <section class="hero" style="padding: 5rem 0 2rem;">
+    <div class="hero__inner">
+      <span class="eyebrow">// Get in touch</span>
+      <h1 class="hero__title">Drop us a <span class="hero__title-accent">line.</span></h1>
+      <p class="hero__sub">Pitch a guest, send fan mail, ask a question for a future Q&amp;A — we read everything that comes in.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT — form + sidebar info
+       The form below is a static demo. To wire it to a real
+       handler (Formspree, Netlify Forms, your own API), update
+       the <form action> attribute. See CUSTOMIZATION-GUIDE.md.
+       ============================================================ -->
+  <section style="padding-top: 1rem;">
+    <div class="container">
+      <div class="contact-shell">
+
+        <!-- Sidebar info -->
+        <aside class="contact-info">
+          <div class="info-card">
+            <h4>📬 Email us directly</h4>
+            <p style="margin-bottom: 0.5rem;">Fastest way to reach us.</p>
+            <a href="mailto:hello@ottogusshow.com">hello@ottogusshow.com</a>
+          </div>
+          <div class="info-card">
+            <h4>🎙 Be a guest</h4>
+            <p>Builders, gamers, teachers, weird internet people — if you have a story we should hear, pitch us using the form. We record Sundays.</p>
+          </div>
+          <div class="info-card">
+            <h4>💌 Fan mail</h4>
+            <p>Got a question for the next Q&amp;A? Mark "fan mail" in the topic dropdown and we'll bring it on the show.</p>
+          </div>
+          <div class="info-card">
+            <h4>🌐 Hang out with us</h4>
+            <p style="margin-bottom: 0.625rem;">We're most active on Discord — that's where the community lives.</p>
+            <div class="socials">
+              <a class="social" href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+              <a class="social" href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+              <a class="social" href="#" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.8 4.8 0 0 1-2.5-3H11v12.6a2.7 2.7 0 1 1-2.7-2.7 2.6 2.6 0 0 1 .8.1V9.7a5.7 5.7 0 1 0 5 5.7V9.4a7.6 7.6 0 0 0 4.5 1.4V7.5a4.8 4.8 0 0 1-2-1.7z"/></svg></a>
+              <a class="social" href="#" aria-label="Discord"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.2.4a17.5 17.5 0 0 1 4.5 1.6 16 16 0 0 0-13.4 0 17.7 17.7 0 0 1 4.5-1.6L10.6 3a19.7 19.7 0 0 0-4.9 1.4A20.7 20.7 0 0 0 2.4 17a19.9 19.9 0 0 0 6 3l1.2-1.6a13 13 0 0 1-2-1l.5-.4a14 14 0 0 0 12 0l.5.4a13 13 0 0 1-2 1L19.6 20a19.9 19.9 0 0 0 6-3 20.6 20.6 0 0 0-3.3-12.6zM9.5 14.4a2 2 0 0 1-1.9-2.2 2 2 0 0 1 1.9-2.2 2 2 0 0 1 1.9 2.2 2 2 0 0 1-1.9 2.2zm5 0a2 2 0 0 1-1.9-2.2 2 2 0 0 1 1.9-2.2 2 2 0 0 1 1.9 2.2 2 2 0 0 1-1.9 2.2z"/></svg></a>
+              <a class="social" href="#" aria-label="X"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.566 7.5L22 22h-6.844l-4.797-6.27L4.8 22H2l7.05-8.05L2 2h6.95l4.34 5.74L18.244 2zm-2.4 18h1.6L7.24 4H5.5l10.344 16z"/></svg></a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Form -->
+        <form class="form" data-contact-form>
+          <div class="form__success" data-success>
+            ✅ Thanks! Your message hit our inbox. We'll get back to you within a few days.
+          </div>
+
+          <div class="form__row form__row--two">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" required placeholder="Jamie Doe" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="topic">What's this about?</label>
+            <select id="topic" name="topic" required>
+              <option value="">Pick one…</option>
+              <option value="guest">🎙 I want to pitch a guest</option>
+              <option value="fanmail">💌 Fan mail / Q&amp;A question</option>
+              <option value="business">💼 Business / sponsorship</option>
+              <option value="other">🌀 Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" required placeholder="Tell us what's up…"></textarea>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <a class="btn btn--secondary" href="mailto:hello@ottogusshow.com">Or just email us</a>
+          </div>
+
+          <p style="font-size: 0.8125rem; color: var(--color-text-faint); margin-top: 0.5rem;">
+            We'll never share your email. Spam goes straight to the void.
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== FOOTER ==== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>The Otto &amp; Gus Show</h3>
+          <p>Tech, gaming, and everything in between. Hosted by two brothers who refuse to take themselves seriously.</p>
+          <div class="socials" style="margin-top: 1.25rem;">
+            <a class="social" href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+            <a class="social" href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+            <a class="social" href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.8a4.8 4.8 0 0 1-2.5-3H11v12.6a2.7 2.7 0 1 1-2.7-2.7 2.6 2.6 0 0 1 .8.1V9.7a5.7 5.7 0 1 0 5 5.7V9.4a7.6 7.6 0 0 0 4.5 1.4V7.5a4.8 4.8 0 0 1-2-1.7z"/></svg></a>
+            <a class="social" href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.2.4a17.5 17.5 0 0 1 4.5 1.6 16 16 0 0 0-13.4 0 17.7 17.7 0 0 1 4.5-1.6L10.6 3a19.7 19.7 0 0 0-4.9 1.4A20.7 20.7 0 0 0 2.4 17a19.9 19.9 0 0 0 6 3l1.2-1.6a13 13 0 0 1-2-1l.5-.4a14 14 0 0 0 12 0l.5.4a13 13 0 0 1-2 1L19.6 20a19.9 19.9 0 0 0 6-3 20.6 20.6 0 0 0-3.3-12.6zM9.5 14.4a2 2 0 0 1-1.9-2.2 2 2 0 0 1 1.9-2.2 2 2 0 0 1 1.9 2.2 2 2 0 0 1-1.9 2.2zm5 0a2 2 0 0 1-1.9-2.2 2 2 0 0 1 1.9-2.2 2 2 0 0 1 1.9 2.2 2 2 0 0 1-1.9 2.2z"/></svg></a>
+            <a class="social" href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.566 7.5L22 22h-6.844l-4.797-6.27L4.8 22H2l7.05-8.05L2 2h6.95l4.34 5.74L18.244 2zm-2.4 18h1.6L7.24 4H5.5l10.344 16z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col"><h5>Show</h5><ul><li><a href="index.html">Home</a></li><li><a href="episodes.html">Episodes</a></li><li><a href="watch.html">Watch &amp; Listen</a></li><li><a href="about.html">About</a></li></ul></div>
+        <div class="footer__col"><h5>Get in touch</h5><ul><li><a href="contact.html">Contact form</a></li><li><a href="mailto:hello@ottogusshow.com">hello@ottogusshow.com</a></li><li><a href="contact.html">Be a guest</a></li><li><a href="contact.html">Fan mail</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 The Otto &amp; Gus Show. All rights reserved.</span><span>Made with ❤️ + ☕ in the basement</span></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
